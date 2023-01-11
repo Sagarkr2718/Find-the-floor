@@ -1,0 +1,17 @@
+public class Solution {
+    public int solve(int A) {
+        double ans= A/200d;
+        int x = (int)ans;
+        double z = -1;
+        if(ans == x){
+            return x;
+        }
+        else if(ans>=0){
+            return x;
+        }
+        else{
+           z = ans+z;
+           return (int)z; 
+        }
+    }
+}
