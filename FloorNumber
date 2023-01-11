@@ -1,5 +1,6 @@
-public class Solution {
-    public int solve(int A) {
+import java.util.*;
+class Main {
+	public static int solve(int A) {
         double ans= A/200d;
         int x = (int)ans;
         double z = -1;
@@ -14,4 +15,12 @@ public class Solution {
            return (int)z; 
         }
     }
+	public static void main(String args[]) {
+		// Your code goes here
+		Scanner sc = new Scanner(System.in);
+		int A = sc.nextInt();
+		int answer = solve(A);
+		System.out.println(answer);
+		
+}
 }
